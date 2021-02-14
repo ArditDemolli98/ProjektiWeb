@@ -1,0 +1,366 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+header{
+	display: flex;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../MainFoto.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: top;
+	position: relative;
+}
+
+ul{
+	margin-left: auto; 
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 20px;
+	border: 1px solid #fff transparent;
+	transition: 0.6s ease;
+}
+
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.nav{
+	width: 100%;
+	padding-top: 25px;
+	height: fit-content;
+}
+
+.logo{
+	height: fit-content;
+}
+
+.logo img{
+	width: 200px;
+	height: auto;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font size: 1000px;
+	text-align: center;
+}
+
+.button{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.btn{
+	border:1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	margin: auto auto;
+	text-decoration: none;
+	border: 1px solid white;
+	background-color: rgba(0,0,0,0.5);
+	padding: 30px;
+	border-radius: 20px;
+	backdrop-filter: blur(5px);
+}
+
+.form-element{
+	display: flex;
+	justify-content: space-around;
+	color: #fff;
+	width: 50%;
+	min-height: 40px;
+	margin: 10px auto;
+	font-size: 18px;
+}
+.form-input{
+	color: black;
+}
+
+.form-submit{
+	margin: 10px auto;
+	background-color: black;
+}
+
+.login-container{
+	width: 25%;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#username{
+	border-radius: 10px;
+	background-position: 7px center;
+	background-image: url(../user.png);
+	background-repeat: no-repeat;
+	background-size: 22px;
+	padding-left: 45px;
+	border: 0;
+}
+#username:focus{
+	border-color: #a1cbef;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+	background-color: #fff;
+	color: #495057;
+}
+
+#password{
+	border:0;
+	border-radius: 10px;
+	background-position: 7px center;
+	background-image: url(../padLock.png);
+	background-repeat: no-repeat;
+	background-size: 22px;
+	padding-left: 45px;
+}
+#password:focus{
+	border-color: #a1cbef;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+	background-color: #fff;
+	color: #495057;
+}
+
+#submit{
+	background-color: #0062cc;
+	border-radius: 10px;
+	width: 30%;
+	cursor: pointer;
+	border: #005cbf;
+}
+#submit:hover{
+	background-color: #0069d9;
+	border: #0062cc;
+}
+#submit:focus{
+	border: #0062cc;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+	background-color: #0069d9;
+	color: #fff;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: space-around;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../mainBackground.jpg);
+}
+
+.main-p1{
+	margin: auto;
+	height: fit-content;
+	width: fit-content;
+}
+
+.main-p2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	height: 70%;
+}
+
+.main-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid gold;
+	margin: auto;
+	transition: 0.6s
+}
+
+.main-element{
+	display: flex;
+	justify-content: space-around;
+	color: #fff;
+	width: 70%;
+	min-height: 40px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.main-container:hover{
+	background-color: #ddc75b;
+}
+
+footer{
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	height: 45vh;
+	background-color: black;
+	justify-content: space-around;
+}
+
+.footer-p1{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: fit-content;
+
+}
+
+.footer-element{
+	color: #ffff;
+	margin-bottom: 15px;
+}
+
+.footer-p2{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: fit-content;
+}
+.footer-p2 img{
+	height: 65px;
+	padding: 20px;
+}
+
+.footer-bottom{
+	border-top: 1px solid #333333;
+	color: white;
+    display: flex;
+    width: 80%;
+    position: absolute;
+    margin-top: 15%;
+    height:fit-content;
+}
+
+.signup-container{
+	width: 25%;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#emri{
+	border-radius: 10px;
+	background-size: 22px;
+	padding-left: 45px;
+	border: 0;
+}
+#emri:focus{
+	border-color: #a1cbef;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+	background-color: #fff;
+	color: #495057;
+}
+#mbiemri{
+	border-radius: 10px;
+	background-size: 22px;
+	padding-left: 45px;
+	border: 0;
+}
+#mbiemri:focus{
+	border-color: #a1cbef;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+	background-color: #fff;
+	color: #495057;
+}
+#email{
+	border-radius: 10px;
+	background-size: 22px;
+	padding-left: 45px;
+	border: 0;
+}
+#email:focus{
+	border-color: #a1cbef;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+	background-color: #fff;
+	color: #495057;
+}
+#reg-username{
+	border-radius: 10px;
+	background-size: 22px;
+	padding-left: 45px;
+	border: 0;
+}
+#reg-username:focus{
+	border-color: #a1cbef;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+	background-color: #fff;
+	color: #495057;
+}
+#reg-password{
+	border:0;
+	border-radius: 10px;
+	padding-left: 45px;
+}
+#reg-password:focus{
+	border-color: #a1cbef;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+	background-color: #fff;
+	color: #495057;
+}
+#reg-pass{
+	border:0;
+	border-radius: 10px;
+	padding-left: 45px;
+}
+#reg-pass:focus{
+	border-color: #a1cbef;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.25);
+	background-color: #fff;
+	color: #495057;
+}
+.about-content{
+	color: white;
+	text-align: left;
+	width: 80%;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.gallery{
+	position: absolute;
+	margin-top: 13%;
+	margin-left: 7%;
+	height: fit-content;
+	width: fit-content;
+}.galleri img{
+	
+}

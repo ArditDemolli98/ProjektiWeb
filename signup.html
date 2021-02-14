@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMORF NUTRITION</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		
+			<div class="logo">
+				<a href="index.html"><img src="logoFoto.png"></a>
+			</div>
+			<div class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="login.html">Log in</a></li>
+					<li><a href="signup.html">Sign up</a></li>
+				</ul>
+			</div>
+			<div class="signup-container">
+				<form onsubmit="validate()">
+					<h2 style="color: white; text-align: center; margin-bottom: 20px">SIGN UP</h1>
+					<input placeholder="Emri" id = "emri" class="form-element form-input" type="text" name="Emri"/>
+					<input placeholder="Mbiemri" id = "mbiemri" class="form-element form-input" type="text" name="Mbiemri"/>
+					<input placeholder="E-mail" id = "email" class="form-element form-input" type="email" name="E-mail"/>
+					<input placeholder="Username" id = "reg-username" class="form-element form-input" type="text" name="username"/>
+					<input placeholder="Password" id="reg-password" class="form-element form-input" type="password" name="password"/>
+					<input placeholder="Confirm pass" id="reg-pass" class="form-element form-input" type="password" name="password"/>
+					<button id="submit" class="form-element " type="submit" name="Log in"/><span style="margin: auto;">Sign up</span></button>
+				</form>
+			</div>
+	</header>
+	<footer>
+		<div class="footer-p1">
+			<h1 class="footer-element">Kontakti</h1>
+			<p1 class="footer-element">Adresa: Rr.28 Nentori "Dardania"</br>10000 Prishtine, Republika e Kosoves</br>Tel: +383 38 00 00 00</br>Web: www.fitard.com</br>Email: info@fitard.com</p1>
+		</div>
+		<div class="footer-p2">
+			<a href="https://www.facebook.com/"><img src="facebookLogo.png"></a>
+			<a href="https://www.youtube.com/"><img src="youtubeLogo.png"></a>
+			<a href="https://twitter.com/"><img src="twitterLogo.png"></a>
+			<a href="https://www.instagram.com/"><img src="instagramLogo.png"></a>
+		</div>		
+	</footer>
+	<script>
+		function validate(){
+			var emri = document.getElementById("emri");
+			var mbiemri = document.getElementById("mbiemri");
+		    var username = document.getElementById("reg-username");
+		    var email = document.getElementById("email");
+		    var password = document.getElementById("reg-password");
+		    var confirmPassword = document.getElementById("reg-pass");
+
+		    if (emri.value==="") {
+		        alert("Ju lutem shkurani nje emer valid");
+		        emri.focus();
+		        return false;
+		    }
+		    if (mbiemri.value==="") {
+		        alert("Ju lutem shkurani nje mbiemer valid");
+		        mbiemri.focus();
+		        return false;
+		    }
+		    if (username.value==="") {
+		        alert("Ju lutem shkurani nje username valid");
+		        username.focus();
+		        return false;
+		    }
+		    if (email.value==="") {
+		        alert("Ju lutem shkurani nje Email valide");
+		        email.focus();
+		        return false;
+		    }
+		    if(password.value.length <=6){
+		        alert("Ju lutem shkurani nje Password me me shume se 6 karaktere");
+		        password.focus();
+		        return false;
+		    }
+		    if(confirmPassword.value != password.value){
+		        alert("Passwordi nuk eshte i njejte!");
+		        confirmPassword.focus();
+		        return false;
+		        debugger
+		    }
+		    return true;
+		}
+	</script>
+</body>
+</html>
