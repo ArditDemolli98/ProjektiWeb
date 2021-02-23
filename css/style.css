@@ -76,6 +76,7 @@ form{
 	margin: 10px auto;
 	font-size: 18px;
 }
+
 .form-input{
 	color: black;
 }
@@ -93,12 +94,13 @@ form{
 #username{
 	border-radius: 10px;
 	background-position: 7px center;
-	background-image: url(../user.png);
+	background-image: url(../photos/user.png);
 	background-repeat: no-repeat;
 	background-size: 22px;
 	padding-left: 45px;
 	border: 0;
 }
+
 #username:focus{
 	border-color: #a1cbef;
 	outline: 0;
@@ -111,11 +113,12 @@ form{
 	border:0;
 	border-radius: 10px;
 	background-position: 7px center;
-	background-image: url(../padLock.png);
+	background-image: url(../photos/padLock.png);
 	background-repeat: no-repeat;
 	background-size: 22px;
 	padding-left: 45px;
 }
+
 #password:focus{
 	border-color: #a1cbef;
 	outline: 0;
@@ -131,10 +134,12 @@ form{
 	cursor: pointer;
 	border: #005cbf;
 }
+
 #submit:hover{
 	background-color: #0069d9;
 	border: #0062cc;
 }
+
 #submit:focus{
 	border: #0062cc;
 	outline: 0;
@@ -142,26 +147,26 @@ form{
 	background-color: #0069d9;
 	color: #fff;
 }
+
 .main-top{
-	
-	height: 80vh;
-	background-size: cover;
-	background-position: top;
-	position: relative;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
 }
+
 main{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../mainBackground.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../photos/mainBackground.jpg);
 	display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
+
 .main-bottom{
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	justify-content: space-around;
-	
 }
+
 .main-p1{
 	margin: auto;
 	margin-top: 10%;
@@ -203,10 +208,16 @@ main{
 footer{
 	margin: auto;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	height: 35vh;
 	background-color: black;
 	justify-content: space-around;
+}
+
+.footer-top{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
 }
 
 .footer-p1{
@@ -215,7 +226,6 @@ footer{
 	flex-direction: column;
 	justify-content: space-around;
 	height: fit-content;
-
 }
 
 .footer-element{
@@ -223,14 +233,15 @@ footer{
 	margin-bottom: 15px;
 }
 
-.footer-p2{
+.footer-p3{
 	margin-top: 50px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	width: fit-content;
 }
-.footer-p2 img{
+
+.footer-p3 img{
 	height: 65px;
 	padding: 20px;
 }
@@ -239,9 +250,7 @@ footer{
 	border-top: 1px solid #333333;
 	color: white;
     display: flex;
-    width: 80%;
-    position: absolute;
-    margin-top: 15%;
+    width: 100%;
     height:fit-content;
 }
 
@@ -249,12 +258,14 @@ footer{
 	width: 25%;
 	margin: 0 auto;
 }
+
 #emri{
 	border-radius: 10px;
 	background-size: 22px;
 	padding-left: 45px;
 	border: 0;
 }
+
 #emri:focus{
 	border-color: #a1cbef;
 	outline: 0;
@@ -262,12 +273,14 @@ footer{
 	background-color: #fff;
 	color: #495057;
 }
+
 #mbiemri{
 	border-radius: 10px;
 	background-size: 22px;
 	padding-left: 45px;
 	border: 0;
 }
+
 #mbiemri:focus{
 	border-color: #a1cbef;
 	outline: 0;
@@ -275,12 +288,14 @@ footer{
 	background-color: #fff;
 	color: #495057;
 }
+
 #email{
 	border-radius: 10px;
 	background-size: 22px;
 	padding-left: 45px;
 	border: 0;
 }
+
 #email:focus{
 	border-color: #a1cbef;
 	outline: 0;
@@ -288,12 +303,14 @@ footer{
 	background-color: #fff;
 	color: #495057;
 }
+
 #reg-username{
 	border-radius: 10px;
 	background-size: 22px;
 	padding-left: 45px;
 	border: 0;
 }
+
 #reg-username:focus{
 	border-color: #a1cbef;
 	outline: 0;
@@ -301,11 +318,13 @@ footer{
 	background-color: #fff;
 	color: #495057;
 }
+
 #reg-password{
 	border:0;
 	border-radius: 10px;
 	padding-left: 45px;
 }
+
 #reg-password:focus{
 	border-color: #a1cbef;
 	outline: 0;
@@ -313,11 +332,13 @@ footer{
 	background-color: #fff;
 	color: #495057;
 }
+
 #reg-pass{
 	border:0;
 	border-radius: 10px;
 	padding-left: 45px;
 }
+
 #reg-pass:focus{
 	border-color: #a1cbef;
 	outline: 0;
@@ -329,32 +350,32 @@ footer{
 .about-background{
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../mainFoto.jpg);
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../photos/mainFoto.jpg);
 	background-position: top;
 	background-size: cover;
 	display: flex;
 }
+
 .about-content{
 	color: white;
 	width: 80%;
 	margin: auto;
 	padding-top: 5%;
 	display: flex;
-
 }
+
 .active{
 	position: absolute;
 	opacity: 1;
-	margin-left: 10%;
 	transition: all 0.5s ease-in-out;
 }
 
 .not-active{
 	position: absolute;
 	opacity: 0;
-	margin-left: 10%;
 	transition: all 0.5s ease-in-out;
 }
+
 .slider-content{
-	position: absolute;
+	margin: auto;
 }
